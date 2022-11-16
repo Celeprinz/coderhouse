@@ -34,16 +34,38 @@ if(productosStorage !== null) {
     productos = JSON.parse(productosStorage);
 }
     
-    const usuario = localStorage.getItem("usuarios")
+    const usuario = JSON.parse(localStorage.getItem("usuarios"))
     const formulario = document.getElementById("formularioTransacciones")
     const select = document.getElementById("selectTransaccion");
     const inputNombreProducto = document.getElementById("nombre_producto")
     const inputStockProducto = document.getElementById("stock_producto")
 
+    // Listado de productos: se deberan sacar de un JSON y por cada uno
+
+    /*/ const select_producto = document.getElementById("nombre_producto");
+
+    for(JSON) {
+
+        
+        const option = document.createElement("option");
+
+    
+        option.innerHTML = `${}´
+
+        select.append(option);
+
+    
+       }
+       nombre_producto.innerHTML=""
+       nombre_producto.append(option); /*/
+
+
+
     formulario.addEventListener("submit",function(e) {
 
         e.preventDefault();
-                       
+        
+        
         const transaccion = select.value;   
         const nombreProducto = inputNombreProducto.value;
         const stockProducto = inputStockProducto.value;
@@ -64,24 +86,7 @@ if(productosStorage !== null) {
 
         guardarProductoEnLocalStorage(productos);
 
-        
-        const contenedor = document.getElementById("contenedor");
-        const ul = document.createElement("ul");
 
-        for(const producto of productos) {
-
-        
-         const li = document.createElement("li");
-
-    
-         li.innerHTML = `<strong>Transaccion:</strong> ${producto.Transaccion}, <strong> realizada por </strong> ${producto.Usuario}, <strong>Producto:</strong> ${producto.Nombre}, <strong>Cantidad:</strong> ${producto.Stock}`;
-
-         ul.append(li);
-
-     
-        }
-        contenedor.innerHTML=""
-        contenedor.append(ul);
         
         alert((transaccion) + " exitoso")
                 

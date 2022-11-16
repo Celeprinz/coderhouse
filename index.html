@@ -5,31 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dae12e3583.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
+<header>
+    
+    <nav id="botonera_principal">
+        <ul>
+            <li> <a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li id="transaccionesRealizadas"> <a href="pages/transacciones.html">Mis transacciones</a></li>
+            <li id="nosotros"> <a href="pages/nosotros.html">Nosotros</a></li>
+            <li id="cerrarSesion"> <a href="pages/login.html">Cerrar Sesion</a></li>
+        </ul>    
+    </nav>
+</header>
 <body>
 
-   <h1>Transacciones deposito </h1>
-
+  
+   <div id="contenido_principal">
+    <h1>Transacciones deposito </h1>
    <form id="formularioTransacciones">
     <select id="selectTransaccion" style="margin-top: 1rem">
         <option value="">Seleccionar transaccion a realizar</option>
         <option value="Recepcion">Recepcion</option>
         <option value="Despacho">Despacho</option>
     </select>
-    <p>Producto  <input type="text"  id="nombre_producto" autocomplete="off" /> </p>
+    <br> 
+    <br>
+    <p>Producto   <select id="nombre_producto" style="margin-top: 1rem">
+        <option value="">Seleccione el producto </option>
+    </select> </p>
     <p>Cantidad  <input type="number" id="stock_producto" autocomplete="off" /> </p>
-    <button type="submit" id="submit">Confirma</button>
-    
+    <button type="submit">Confirma</button>
+ 
 
 </form>
-    <br>
-    <br>
-
+</div>
     <contenedor id="contenedor">
-
     </contenedor>
+
+    <footer>
+        <div id="datos">
+            <p> contacto@depositoonline.com.ar</p>
+            <p> Teléfonos: (11) 4554-0801/0802/0803</p>
+        </div>
+        <div id="redes">
+            <nav id="botonera_footer">
+                <ul>
+                    <li><a href="#"><img src="img/ico/fb.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/ico/ig.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/ico/tw.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="img/ico/gp.png" alt="Google"></a></li>
+                </ul>
+            </nav>
+        </div>
+</footer>
    
-   <script src="js/entrega3.js"></script>
+
+    <script src="js/entrega3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
    
    
 </body>

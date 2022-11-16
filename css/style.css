@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+    width: 600px;
+    height: 70px;
+    margin-left: 450px;
+}
+
+
+#botonera_principal {
+    width: 600px;
+    height: 50px;
+    margin-top: 10px;
+    
+}
+#botonera_principal ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    
+}
+#botonera_principal ul li{
+    display: inline;
+    width: 150px;
+    
+}
+#botonera_principal ul li a{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+#botonera_principal ul li a:hover{
+    color: rgb(255, 230, 0);
+}
+#botonera_principal ul li a:active{
+    color: rgb(230, 0, 0);
+}
+
+#transaccionesRealizadas{
+float: center; 
+}
+
+
+#cerrarSesion {
+color:rgb(230, 0, 0);
+float: right; 
+}
+
+
+ 
+#contenido_principal {
+    width: 600px;
+    height: 450px;
+    margin-left: 450px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: center;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    width: 600px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.052);
+    color: rgb(255, 255, 255);
+    margin-left: 450px;
+    margin-right: auto;
+    margin-top: 10px;
+    float: center;
+}
+#datos {
+    width: 300px;
+    height: 180px;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#datos p{
+    font-size: 15px;
+}
+#redes {
+    width: 300px;
+    height: 180px;
+    float: right;
+}
+#botonera_footer ul{
+    margin-top: 30px;
+    list-style-type: none;
+ }
+#botonera_footer ul li {
+    display: inline;
+    padding: 10px;
+}
+#botonera_footer ul li a {
+    text-decoration: none;
+}
+#botonera_footer ul img {
+    height: auto;
+    width: 40px;
+}
+
+
+/** Nosotros**/
+#contenido_principal_nosotros {
+    width: 600px;
+    height: 500px;
+    margin-left: 450px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+}
+#contenido_formulario {
+    width: 600px;
+    height: 500px;
+    margin-left: 450px;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.109);
+    padding: 60px;
+    margin-bottom: 70px;
+    color: rgb(255, 255, 255);
+}
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50x;
+    margin-bottom: 2px;
+    
+}
+.grupo {
+    width: 340px;
+    height: 40px;
+}
+.grupo label {
+  float: left
+}
+.grupo input {
+    height: 25px;
+    float: right
+  }
+
+
+  #map {
+    width: 600px;
+	height: 500px;
+	margin-top: none ;
+    margin-bottom: 10px;
+    margin-left: 450px;
+    
+}
