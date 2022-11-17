@@ -21,10 +21,10 @@
     
         <nav id="botonera_principal">
             <ul>
-                <li> <a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li> <a href="home.html"><i class="fa-solid fa-house"></i></a></li>
                 <li id="transaccionesRealizadas"> <a href="transacciones.html">Mis transacciones</a></li>
                 <li id="nosotros"> <a href="#">Nosotros</a></li>
-                <li id="cerrarSesion"> <a href="login.html">Cerrar Sesion</a></li>
+                <li id="cerrarSesion"> <a href="../index.html">Cerrar Sesion</a></li>
             </ul>    
         </nav>
     </header>
@@ -59,8 +59,9 @@
             <br><br>
             <input type="checkbox" name="condiciones" required> Acepto los terminos y condiciones
             <br><br>
-            <input type="submit"  value="Enviar datos" >
-            <input type="reset" value="Borrar"> 
+            <button onclick="validateForm()" value="Enviar datos">Enviar datos </button>
+            <button type="reset" value="Borrar"> Borrar </button>
+            
         </div>     
     </form>
 </section>

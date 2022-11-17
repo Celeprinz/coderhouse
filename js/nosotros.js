@@ -9,3 +9,4 @@ function iniciarMap(){
       map: map
     });
 }
+
