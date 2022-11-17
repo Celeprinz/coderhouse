@@ -39,7 +39,7 @@ const inputStockProducto = document.getElementById("stock_producto");
 
 let frutas = [];
 
-fetch(`/frutas.json`)
+fetch(`../frutas.json`)
   .then((Response) => {
     return Response.json();
   })
